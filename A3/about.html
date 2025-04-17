@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - GameZone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="main.js"></script>
+  <style>
+    #scroll-progress {
+      height: 4px;
+      background-color: #3b82f6;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      z-index: 50;
+    }
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+<!-- Navbar -->
+<nav class="bg-gray-800 px-4 py-3 flex items-center justify-between">
+  <div class="text-xl font-bold">GameZone</div>
+  <button id="nav-toggle" class="md:hidden">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+  <div id="nav-menu" class="hidden md:flex space-x-4">
+    <a href="index.html" class="hover:text-blue-400">Home</a>
+    <a href="games.html" class="hover:text-blue-400">Games</a>
+    <a href="about.html" class="hover:text-blue-400">About</a>
+  </div>
+</nav>
+
+  <!-- About Content -->
+  <main class="px-6 py-10 max-w-3xl mx-auto text-center">
+    <h1 class="text-4xl font-bold mb-6">About GameZone</h1>
+    <p class="text-gray-300 text-lg leading-relaxed">
+      GameZone is your go-to destination for repacked PC games — light, fast, and free of bloat.
+      Whether you're reliving classics or discovering new adventures, our goal is to make game access
+      simple and smooth on your local setup. Built with love for gamers, by gamers.
+    </p>
+    <p class="text-gray-400 mt-4">
+      This is a localhost project built for private offline game management and fun.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-4">
+    <p>&copy; 2025 GameZone. All rights reserved.</p>
+    <button id="back-to-top" onclick="scrollToTop()" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded">Back to Top</button>
+  </footer>
+
+</body>
+</html>
